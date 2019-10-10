@@ -26,7 +26,7 @@ server.use((req, res, next) => {
 // Use default router
 
 server.use(jsonServer.rewriter({
-  '/qqfind/jane/*': '/$1'
+  '/qqfind/*': '/$1'
 }))
 
 server.use(router)
